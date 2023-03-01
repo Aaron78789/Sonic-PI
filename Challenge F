@@ -1,1 +1,18 @@
+#Challenge F
+x= 0.25
+y= 21
+
+87.times do
+  play y
+  y= y+1
+  sleep x
+end
+
+s=108
+x = 0.125
+88.times do
+  play s
+  s=s-1
+  sleep x
+end
 
