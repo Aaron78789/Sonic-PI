@@ -1,1 +1,71 @@
+use_bpm 113
+passions_fruit="C:/Users/aaron_sims/Downloads/passions_fruit.wav"
+passion_cleans="C:/Users/aaron_sims/Downloads/passion_cleans.wav"
 
+
+sample passion_cleans
+sleep 19.5
+
+live_loop :back do
+  play  :e3
+  sleep 0.75
+  play  :b3
+  sleep 0.25
+  sleep 0.5 #Rest
+  play  :b3
+  sleep 0.5
+  play  :e3
+  sleep 0.75
+  play  :b3
+  sleep 0.25
+  sleep 0.5 #Rest
+  play  :b3
+  sleep 0.5
+end
+
+live_loop :start do
+  use_synth :piano
+  with_fx :compressor do
+    sleep 8
+    play :fs5
+    sleep 1
+    play :cs5
+    sleep 1
+    sleep 2
+    
+    sleep 2
+    play :b4
+    sleep 1
+    sleep 1
+    
+    play :fs5
+    sleep 1
+    play :as4
+    sleep 1
+    sleep 2
+    
+    sleep 1
+    play :as4
+    sleep 1
+    play :gs4
+    sleep 1
+    sleep 1
+    
+    play:as4
+    sleep 1
+    play:gs4
+    sleep 1
+    sleep 2
+    
+    sleep 2
+    play:as4
+    sleep 1
+    play:cs5
+    sleep 1
+  end
+end
+
+sleep 13
+
+sample passions_fruit
+sleep 13
