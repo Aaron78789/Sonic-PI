@@ -1,6 +1,7 @@
 use_bpm 113
 passions_fruit="C:/Users/aaron_sims/Downloads/passions_fruit.wav"
 passion_cleans="C:/Users/aaron_sims/Downloads/passion_cleans.wav"
+passion_voice="C:/Users/aaron_sims/Downloads/passion_voice.wav"
 
 
 sample passion_cleans
@@ -65,7 +66,17 @@ live_loop :start do
   end
 end
 
-sleep 13
+sleep 14
 
 sample passions_fruit
-sleep 13
+sleep 14
+
+y=0.70
+
+4.times do
+  sample passion_voice,amp: y
+  sleep 5
+  
+  y=y+0.25
+  
+end
