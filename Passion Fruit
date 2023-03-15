@@ -2,11 +2,16 @@ use_bpm 113
 passions_fruit="C:/Users/aaron_sims/Downloads/passions_fruit.wav"
 passion_cleans="C:/Users/aaron_sims/Downloads/passion_cleans.wav"
 passion_voice="C:/Users/aaron_sims/Downloads/passion_voice.wav"
+
 w=0
 s=0
 notes = [:e3, :b3, 0, :b3, :e3, :b3, 0, :b3]
 bin = [0.75, 0.25, 0.5, 0.5, 0.75, 0.25, 0.5, 0.5]
 
+define :rest do
+  sleep 1
+  sleep 2
+end
 
 x=:e3
 y=:b3
@@ -36,8 +41,7 @@ live_loop :start do
     play f
     sleep 1
     play c
-    sleep 1
-    sleep 2
+    rest
     
     sleep 2
     play b
@@ -47,8 +51,7 @@ live_loop :start do
     play f
     sleep 1
     play a
-    sleep 1
-    sleep 2
+    rest
     
     sleep 1
     play a
@@ -60,8 +63,7 @@ live_loop :start do
     play a
     sleep 1
     play g
-    sleep 1
-    sleep 2
+    rest
     
     sleep 2
     play a
@@ -85,4 +87,3 @@ y=0.70
   y=y+0.25
   
 end
-
