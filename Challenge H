@@ -1,0 +1,56 @@
+use_bpm 120
+use_synth :chiplead
+
+# MEASURE 1 ---------------------------
+define :go do |n1, n2|
+  play n1
+  play n2
+  sleep 0.5
+end
+
+live_loop :foo do
+  go :a4, :a5
+  go :a4, :a5
+  go :c5, :c6
+  go :a4, :a5
+  go :d5, :d6
+  go :a4, :a5
+  go :e5, :a6
+  go :d5, :d6
+end
+
+# MEASURE 2 ---------------------------
+live_loop :move do
+  go :c5, :c6
+  go :c5, :c6
+  go :e5, :e6
+  go :c5, :c6
+  go :g5, :g6
+  go :c4, :c5
+  go :e5, :e6
+  go:c4, :c5
+end
+
+# MEASURE 3 ---------------------------
+live_loop :fo do
+  go :g4, :g5
+  go :g4, :g5
+  go :b4, :b5
+  go :g4, :g5
+  go :c5, :c6
+  go :g4, :g5
+  go :d5, :d6
+  go :c5, :c6
+end
+
+# MEASURE 4 ---------------------------
+live_loop :so do
+  go :f4, :f5
+  go :f4, :f5
+  go :a4, :a5
+  go :f4, :f5
+  go :c5, :c6
+  go:f4, :f5
+  go :c5, :c6
+  go :b4, :b5
+end
