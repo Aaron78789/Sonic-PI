@@ -1,0 +1,120 @@
+use_bpm 123
+a=0.3
+
+#29
+play :ds5 ,release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :cs5,release: 0.5
+sleep a
+play :bs4, release: 0.5
+sleep a
+
+sleep 0.4
+
+#30
+play :ds5, release: 0.5
+sleep a
+play :cs5,release: 0.5
+sleep a
+play :bs4, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :cs5,release: 0.5
+sleep a
+play :bs4, release: 0.5
+sleep a
+
+sleep 0.4
+
+#31
+play :ds5, release: 0.5
+sleep a
+play :cs5,release: 0.5
+sleep a
+play :bs4, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :cs5,release: 0.5
+sleep a
+play :bs4, release: 0.5
+sleep a
+
+sleep 0.4
+
+#32
+play :ds5, release: 0.5
+sleep a
+play :cs5,release: 0.5
+sleep a
+play :bs4, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, sustain: 0.1
+sleep a
+
+sleep 0.5
+
+#33
+play :ds5, release: 0.6
+sleep a
+play :ds5, release: 0.6
+sleep a
+play :ds5, release: 0.6
+sleep a
+play :ds5, release: 0.6
+sleep a
+play :ds5, sustain: 0.1
+sleep a
+
+sleep 0.6
+
+#34
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :ds5, release: 0.5
+sleep a
+play :cs5,release: 0.5
+sleep a
+play :bs4, release: 0.5
+sleep a
