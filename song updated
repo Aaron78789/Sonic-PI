@@ -1,0 +1,269 @@
+use_bpm 123
+a = 0.333333333333333333333
+b = 4.5
+c = 1
+
+define :yes do
+  sleep 1
+  play :es3, release: 0.6
+  play :gs3, release: 1.5
+  play :es3, release: 0.6
+  play :gs3, release: 3
+  sleep b
+  play :ds3, release: 0.6
+  play :fs3, release: 1.5
+  play :ds3, release: 0.6
+  play :fs3, release: 3
+  sleep b
+  play :es3, release: 0.6
+  play :gs3, release: 1.5
+  play :es3, release: 0.6
+  play :gs3, release: 3
+  sleep b
+  play :ds3, release: 0.6
+  play :fs3, release: 1.5
+  play :ds3, release: 0.6
+  play :fs3, release: 3
+  sleep b
+end
+
+live_loop :back do
+  with_fx :compressor do
+    yes
+  end
+end
+
+y=1
+#intro
+
+play :ds5
+sleep a
+play :ds5
+sleep a
+play :ds5
+sleep a
+play :es5
+sleep a
+play :ds5
+sleep a
+play :cs5
+sleep a
+play :cs5
+sleep a
+play :bs4
+play :bs4
+sleep a
+play :ds5
+sleep a
+play :ds5
+sleep a
+play :ds5
+sleep a
+play :es5
+sleep a
+play :ds5
+sleep a
+play :cs5
+sleep a
+play :cs5
+sleep a
+play :bs4
+play :bs4
+sleep a
+play :ds5
+sleep a
+play :ds5
+sleep a
+play :ds5
+sleep a
+play :ds5
+sleep a
+play :ds5
+sleep a
+play :ds5
+sleep a
+play :es5
+sleep a
+play :cs5
+sleep a
+#Meaure 27
+1.times do
+  play :ds5, release: 0.6
+  sleep a
+  play :ds5, release: 0.6
+  sleep a
+  play :ds5, release: 0.6
+  sleep a
+  play :ds5, release: 0.6
+  sleep a
+  play :ds5, release: 0.6
+  sleep a
+  play :ds5, release: 0.6
+  sleep a
+  play :ds5, release: 0.6
+  sleep a
+  play :ds5, release: 0.6
+  sleep a
+  play :fs5, release: 0.1
+  play :fs5, release: 1.8
+  sleep 1
+end
+
+sleep c
+
+#Measure 28
+
+1.times do
+  play :cs5, release: 0.6
+  sleep a
+  play :bs4, release: 0.6
+  sleep a
+  play :bs4, release: 0.6
+  sleep a
+  play :bs4, release: 0.6
+  sleep a
+  play :cs5, release: 0.6
+  sleep a
+  play :cs5, release: 0.6
+  sleep a
+  play :cs5, release: 0.6
+  sleep a
+  play :bs4, release: 0.6
+  sleep a
+  play :bs4 , release: 0.1
+  play :bs4 , release: 1.25
+  sleep a
+end
+
+sleep c
+
+#Meaure 29
+
+1.times do
+  play:ds5 , release: 0.6
+  sleep a
+  play:ds5, release: 0.6
+  sleep a
+  play:ds5, release: 0.6
+  sleep a
+  play:ds5, release: 0.6
+  sleep a
+  play:ds5, release: 0.6
+  sleep a
+  play:ds5, release: 0.6
+  sleep a
+  play:cs5, release: 0.6
+  sleep a
+  play:bs4, release: 0.6
+  sleep a
+end
+
+sleep c
+
+#Meaure 30
+1.times do
+  play :ds5, release: 0.5
+  sleep a
+  play :cs5,release: 0.5
+  sleep a
+  play :bs4, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :cs5,release: 0.5
+  sleep a
+  play :bs4, release: 0.5
+  sleep a
+end
+
+sleep c
+
+#Meaure 31
+1.times do
+  play :ds5, release: 0.5
+  sleep a
+  play :cs5,release: 0.5
+  sleep a
+  play :bs4, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :cs5,release: 0.5
+  sleep a
+  play :bs4, release: 0.5
+  sleep a
+end
+
+sleep c
+
+#Meaure 32
+1.times do
+  play :ds5, release: 0.5
+  sleep a
+  play :cs5,release: 0.5
+  sleep a
+  play :bs4, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, sustain: 0.2
+  sleep a
+end
+
+sleep c
+
+#Meaure 33
+1.times do
+  play :ds5, release: 0.6
+  sleep a
+  play :ds5, release: 0.6
+  sleep a
+  play :ds5, release: 0.6
+  sleep a
+  play :ds5, release: 0.6
+  sleep a
+  play :ds5, sustain: 0.2
+  sleep a
+end
+
+sleep c
+
+#Measure 34
+1.times do
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :ds5, release: 0.5
+  sleep a
+  play :cs5,release: 0.5
+  sleep a
+  play :bs4, release: 0.5
+  sleep a
+end
