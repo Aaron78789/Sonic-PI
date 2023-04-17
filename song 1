@@ -1,0 +1,97 @@
+use_bpm 113
+passions_fruit="C:/Users/aaron_sims/Downloads/passions_fruit.wav"
+passion_cleans="C:/Users/aaron_sims/Downloads/passion_cleans.wav"
+passion_voice="C:/Users/aaron_sims/Downloads/passion_voice.wav"
+
+P=2
+w=0
+s=0
+notes = [:e3, :b3, 0, :b3, :e3, :b3, 0, :b3]
+bin = [0.75, 0.25, 0.5, 0.5, 0.75, 0.25, 0.5, 0.5]
+
+define :rest do
+  sleep 1
+  sleep 2
+end
+
+x=:e3
+y=:b3
+f=:fs5
+c=:cs5
+b=:b4
+a=:as4
+g=:gs4
+sample passion_cleans
+sleep 19.5
+
+live_loop :array do
+  8. times do
+    play (notes [w])
+    sleep (bin [s])
+    w=w+1
+    s=s+1
+  end
+  w=0
+  s=0
+end
+
+live_loop :start do
+  use_synth :piano
+  with_fx :compressor do
+    k=1
+    sleep 8
+    play f,amp: k
+    sleep 1
+    play c,amp: k
+    rest
+    
+    sleep 2
+    play b,amp: k
+    sleep 1
+    sleep 1
+    
+    play f,amp: k
+    sleep 1
+    play a,amp: k
+    rest
+    
+    sleep 1
+    play a,amp: k
+    sleep 1
+    play g,amp: k
+    sleep 1
+    sleep 1
+    
+    play a,amp: k
+    sleep 1
+    play g,amp: k
+    rest
+    
+    sleep 2
+    play a,amp: k
+    sleep 1
+    play c ,amp: k
+    sleep 1
+  end
+end
+
+8.times do
+  k=k-0.12
+  sleep 2
+end
+stop
+
+sleep 14
+
+sample passions_fruit
+sleep 14
+
+
+4.times do
+  
+  sample passion_voice , amp: p
+  sleep 5
+  
+  p=P+0.25
+  
+end
